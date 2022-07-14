@@ -15,7 +15,7 @@ function App() {
 
       setMonsters(repositorios);
     }
-    carregaRepositorios();
+    carregaRepositorios().then(r => console.log(r))
   }, []);
 
   function onSearchChange(event) {
